@@ -1,0 +1,329 @@
+<svg width="1180" height="610" viewBox="0 0 1180 610" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="'Cascadia Code','Fira Code',Consolas,monospace">
+<defs>
+  <clipPath id="canvasClip"><rect x="0" y="0" width="1180" height="610" rx="28"/></clipPath>
+  <clipPath id="leftPanelClip"><rect x="40" y="40" width="420" height="530" rx="18"/></clipPath>
+  <clipPath id="rightPanelClip"><rect x="480" y="40" width="660" height="530" rx="18"/></clipPath>
+
+  <linearGradient id="bgGrad" x1="0" y1="0" x2="1180" y2="610" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#050814"/>
+    <stop offset="50%" stop-color="#030712"/>
+    <stop offset="100%" stop-color="#040610"/>
+  </linearGradient>
+
+  <radialGradient id="blobPurple" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="blobCyan" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="blobEmerald" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#10B981" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+  </radialGradient>
+
+  <linearGradient id="accentGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="900" y2="0" spreadMethod="reflect">
+    <stop offset="0%" stop-color="#7C3AED"/>
+    <stop offset="50%" stop-color="#22D3EE"/>
+    <stop offset="100%" stop-color="#10B981"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="-900 0;0 0;-900 0" dur="8s" repeatCount="indefinite"/>
+  </linearGradient>
+
+  <linearGradient id="asciiGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="0" spreadMethod="reflect">
+    <stop offset="0%" stop-color="#A78BFA"/>
+    <stop offset="50%" stop-color="#22D3EE"/>
+    <stop offset="100%" stop-color="#34D399"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="-600 0;0 0;-600 0" dur="6s" repeatCount="indefinite"/>
+  </linearGradient>
+
+  <linearGradient id="borderGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1180" y2="610">
+    <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.9"/>
+    <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#10B981" stop-opacity="0.9"/>
+    <animateTransform attributeName="gradientTransform" type="rotate" values="0 590 305;360 590 305" dur="14s" repeatCount="indefinite"/>
+  </linearGradient>
+
+  <linearGradient id="pillGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.35"/>
+  </linearGradient>
+
+  <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="strongGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="10" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="blurBg" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="35"/>
+  </filter>
+  <filter id="noiseFilter" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+  </filter>
+
+  <mask id="fadeMaskLeft">
+    <rect x="40" y="40" width="420" height="530" fill="url(#fadeGradLeft)"/>
+  </mask>
+  <linearGradient id="fadeGradLeft" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+    <stop offset="15%" stop-color="#fff" stop-opacity="1"/>
+    <stop offset="85%" stop-color="#fff" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+
+<g clip-path="url(#canvasClip)">
+  <!-- BACKGROUND -->
+  <rect x="0" y="0" width="1180" height="610" fill="url(#bgGrad)"/>
+
+  <g filter="url(#blurBg)">
+    <circle cx="150" cy="120" r="160" fill="url(#blobPurple)">
+      <animate attributeName="cx" values="150;230;150" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="120;200;120" dur="19s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="950" cy="480" r="200" fill="url(#blobCyan)">
+      <animate attributeName="cx" values="950;850;950" dur="21s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="480;380;480" dur="17s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="850" cy="100" r="150" fill="url(#blobEmerald)">
+      <animate attributeName="cx" values="850;760;850" dur="23s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="100;180;100" dur="18s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <rect x="0" y="0" width="1180" height="610" filter="url(#noiseFilter)" style="mix-blend-mode:overlay"/>
+
+  <!-- floating particles -->
+  <g fill="#ffffff">
+    <circle cx="120" cy="500" r="1.6" opacity="0.5"><animate attributeName="cy" values="500;60;500" dur="24s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="24s" repeatCount="indefinite"/></circle>
+    <circle cx="380" cy="560" r="1.2" opacity="0.4"><animate attributeName="cy" values="560;80;560" dur="19s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0" dur="19s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="90" r="1.4" opacity="0.5"><animate attributeName="cy" values="90;560;90" dur="27s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0" dur="27s" repeatCount="indefinite"/></circle>
+    <circle cx="1040" cy="120" r="1.3" opacity="0.4"><animate attributeName="cy" values="120;540;120" dur="22s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="22s" repeatCount="indefinite"/></circle>
+    <circle cx="900" cy="530" r="1.5" opacity="0.45"><animate attributeName="cy" values="530;100;530" dur="26s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0" dur="26s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- outer shimmering border -->
+  <rect x="1.5" y="1.5" width="1177" height="607" rx="27" fill="none" stroke="url(#borderGrad)" stroke-width="1.4" opacity="0.8"/>
+  <rect x="1.5" y="1.5" width="1177" height="607" rx="27" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- ================= LEFT PANEL ================= -->
+  <g>
+    <rect x="40" y="40" width="420" height="530" rx="18" fill="#0F172A" fill-opacity="0.55"/>
+    <rect x="40" y="40" width="420" height="530" rx="18" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <!-- glass reflection -->
+    <path d="M40 58 Q250 30 460 58 L460 130 Q250 100 40 130 Z" fill="#ffffff" opacity="0.04" clip-path="url(#leftPanelClip)"/>
+
+    <!-- tab -->
+    <rect x="56" y="56" width="150" height="26" rx="7" fill="#111827" stroke="rgba(255,255,255,0.08)"/>
+    <circle cx="70" cy="69" r="3.2" fill="#EF4444"/>
+    <circle cx="82" cy="69" r="3.2" fill="#F59E0B"/>
+    <circle cx="94" cy="69" r="3.2" fill="#10B981"/>
+    <text x="106" y="73" font-size="10.5" fill="#94A3B8">portrait.ascii</text>
+
+    <!-- ASCII portrait, floats gently -->
+    <g clip-path="url(#leftPanelClip)">
+      <g transform="translate(76,110)">
+        <animateTransform attributeName="transform" type="translate" values="76,110;76,102;76,110" dur="5s" repeatCount="indefinite" additive="replace"/>
+        <g font-size="10.4" fill="url(#asciiGrad)" filter="url(#softGlow)" xml:space="preserve">
+          <text y="0">        .:-=+*#%@%#*+=-:.        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.0s" repeatCount="indefinite"/></text>
+          <text y="15">      :+#%@@@@@@@@@@@@@%#+:      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.10s" repeatCount="indefinite"/></text>
+          <text y="30">    -#@@@@@@@@@@@@@@@@@@@@#-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.20s" repeatCount="indefinite"/></text>
+          <text y="45">   +@@@@@@@#*=-----=*#@@@@@@+   <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.30s" repeatCount="indefinite"/></text>
+          <text y="60">  =@@@@@#-             -#@@@@=  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.40s" repeatCount="indefinite"/></text>
+          <text y="75"> *@@@@#    .-=+**+=-.    #@@@@* <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.50s" repeatCount="indefinite"/></text>
+          <text y="90"> @@@@#   =#@@@@@@@@#=   #@@@@  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.60s" repeatCount="indefinite"/></text>
+          <text y="105">*@@@@   +@@@@====@@@@+   @@@@* <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.70s" repeatCount="indefinite"/></text>
+          <text y="120">@@@@=  #@@@@      @@@@#  =@@@@ <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.80s" repeatCount="indefinite"/></text>
+          <text y="135">@@@@  =@@@@        @@@@=  @@@@ <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.90s" repeatCount="indefinite"/></text>
+          <text y="150">@@@@  #@@@@        @@@@#  @@@@ <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.00s" repeatCount="indefinite"/></text>
+          <text y="165">*@@@@  @@@@=      =@@@@  @@@@* <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.10s" repeatCount="indefinite"/></text>
+          <text y="180"> @@@@#  #@@@@====@@@@#  #@@@@  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.20s" repeatCount="indefinite"/></text>
+          <text y="195"> *@@@@   =#@@@@@@@@#=   @@@@*  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.30s" repeatCount="indefinite"/></text>
+          <text y="210">  =@@@@#     ....     #@@@@=   <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.40s" repeatCount="indefinite"/></text>
+          <text y="225">   +@@@@@@#*==+*#@@@@@@+       <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.50s" repeatCount="indefinite"/></text>
+          <text y="240">    -#@@@@@@@@@@@@@@@@#-       <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.60s" repeatCount="indefinite"/></text>
+          <text y="255">      :+#%@@@@@@@@%#+:         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.70s" repeatCount="indefinite"/></text>
+          <text y="270">        .:-=+*#%#*+=-:.        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.80s" repeatCount="indefinite"/></text>
+        </g>
+        <!-- terminal cursor block under ascii -->
+        <rect x="0" y="288" width="9" height="14" fill="#22D3EE" filter="url(#softGlow)">
+          <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+        </rect>
+        <text x="16" y="299" font-size="11" fill="#94A3B8">rendering_identity...</text>
+      </g>
+
+      <!-- scanline sweep -->
+      <rect x="40" y="0" width="420" height="6" fill="#22D3EE" opacity="0.10">
+        <animate attributeName="y" values="40;565;40" dur="4.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.18;0" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT PANEL ================= -->
+  <g>
+    <rect x="480" y="40" width="660" height="530" rx="18" fill="#0F172A" fill-opacity="0.55"/>
+    <rect x="480" y="40" width="660" height="530" rx="18" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <path d="M480 58 Q810 30 1140 58 L1140 120 Q810 92 480 120 Z" fill="#ffffff" opacity="0.04" clip-path="url(#rightPanelClip)"/>
+
+    <!-- terminal titlebar -->
+    <rect x="480" y="40" width="660" height="38" rx="18" fill="#111827" fill-opacity="0.7"/>
+    <rect x="480" y="60" width="660" height="18" fill="#111827" fill-opacity="0.7"/>
+    <circle cx="504" cy="59" r="5" fill="#EF4444"/>
+    <circle cx="520" cy="59" r="5" fill="#F59E0B"/>
+    <circle cx="536" cy="59" r="5" fill="#10B981"/>
+    <text x="700" y="63" font-size="12" fill="#94A3B8" text-anchor="middle">tashfin@dev :: ~/profile</text>
+
+    <g clip-path="url(#rightPanelClip)">
+      <!-- greeting -->
+      <g font-family="'Cascadia Code',monospace">
+        <text x="512" y="118" font-size="22" fill="#F8FAFC">Hi <tspan font-size="20">👋</tspan></text>
+        <text x="512" y="118" font-size="22" fill="#F8FAFC" opacity="0">
+          <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.2s" fill="freeze"/>
+        </text>
+        <text x="512" y="160" font-size="36" font-weight="700" fill="url(#accentGrad)" filter="url(#softGlow)">I'm Md. Tashfin Younus</text>
+      </g>
+
+      <!-- typing role phrases -->
+      <g font-size="19" font-family="'Cascadia Code',monospace" fill="#67E8F9">
+        <text x="512" y="196" fill="#475569">&#10095;</text>
+        <g>
+          <clipPath id="clip2"><rect x="530" y="180" width="0" height="26"><animate attributeName="width" values="0;245;245;245" keyTimes="0;0.28;0.85;1" dur="12s" begin="0s" repeatCount="indefinite"/></rect></clipPath>
+          <g opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="12s" begin="0s" repeatCount="indefinite"/>
+            <text x="530" y="196" clip-path="url(#clip2)">Full-Stack Developer</text>
+            <rect y="180" width="3" height="20" fill="#22D3EE">
+              <animate attributeName="x" values="530;775;775" keyTimes="0;0.28;1" dur="12s" begin="0s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="1;0" dur="0.5s" repeatCount="indefinite"/>
+            </rect>
+          </g>
+        </g>
+      </g>
+
+      <!-- divider -->
+      <line x1="512" y1="222" x2="1108" y2="222" stroke="rgba(255,255,255,0.08)"/>
+
+      <!-- info rows, sequential reveal -->
+      <g font-size="13.5" font-family="'Cascadia Code',monospace">
+        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.6s" fill="freeze"/>
+          <text x="512" y="248" fill="#22D3EE">location</text>
+          <text x="612" y="248" fill="#CBD5E1">Cumilla, Bangladesh</text>
+        </g>
+        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.9s" fill="freeze"/>
+          <text x="512" y="274" fill="#22D3EE">education</text>
+          <text x="612" y="274" fill="#CBD5E1">BSc in CSE, Daffodil International University</text>
+        </g>
+        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.2s" fill="freeze"/>
+          <text x="512" y="300" fill="#22D3EE">focus</text>
+          <text x="612" y="300" fill="#CBD5E1">Scalable backend systems &amp; distributed architectures</text>
+        </g>
+        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.5s" fill="freeze"/>
+          <text x="512" y="326" fill="#22D3EE">github</text>
+          <text x="612" y="326" fill="#CBD5E1">github.com/tashfinyounus1</text>
+        </g>
+        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.8s" fill="freeze"/>
+          <text x="512" y="352" fill="#22D3EE">email</text>
+          <text x="612" y="352" fill="#CBD5E1">tashfinyounus1@gmail.com</text>
+        </g>
+      </g>
+
+      <line x1="512" y1="374" x2="1108" y2="374" stroke="rgba(255,255,255,0.08)"/>
+      <text x="512" y="398" font-size="12.5" fill="#94A3B8" letter-spacing="2">SKILLS</text>
+
+      <!-- skill pills -->
+      <g font-size="13" font-family="'Cascadia Code',monospace" font-weight="600">
+        <!-- row 1 -->
+        <g transform="translate(512,410)">
+          <rect width="70" height="32" rx="16" fill="url(#pillGrad)" stroke="rgba(124,58,237,0.5)" filter="url(#softGlow)"><animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/></rect>
+          <text x="35" y="21" text-anchor="middle" fill="#E9D5FF">React</text>
+        </g>
+        <g transform="translate(592,410)">
+          <rect width="80" height="32" rx="16" fill="url(#pillGrad)" stroke="rgba(34,211,238,0.5)" filter="url(#softGlow)"><animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" begin="0.2s" repeatCount="indefinite"/></rect>
+          <text x="40" y="21" text-anchor="middle" fill="#A5F3FC">Next.js</text>
+        </g>
+        <g transform="translate(682,410)">
+          <rect width="88" height="32" rx="16" fill="url(#pillGrad)" stroke="rgba(16,185,129,0.5)" filter="url(#softGlow)"><animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" begin="0.4s" repeatCount="indefinite"/></rect>
+          <text x="44" y="21" text-anchor="middle" fill="#A7F3D0">Node.js</text>
+        </g>
+        <g transform="translate(780,410)">
+          <rect width="100" height="32" rx="16" fill="url(#pillGrad)" stroke="rgba(124,58,237,0.5)" filter="url(#softGlow)"><animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" begin="0.6s" repeatCount="indefinite"/></rect>
+          <text x="50" y="21" text-anchor="middle" fill="#E9D5FF">PostgreSQL</text>
+        </g>
+        <g transform="translate(890,410)">
+          <rect width="68" height="32" rx="16" fill="url(#pillGrad)" stroke="rgba(34,211,238,0.5)" filter="url(#softGlow)"><animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" begin="0.8s" repeatCount="indefinite"/></rect>
+          <text x="34" y="21" text-anchor="middle" fill="#A5F3FC">Redis</text>
+        </g>
+        <!-- row 2 -->
+        <g transform="translate(512,452)">
+          <rect width="80" height="32" rx="16" fill="url(#pillGrad)" stroke="rgba(16,185,129,0.5)" filter="url(#softGlow)"><animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" begin="1s" repeatCount="indefinite"/></rect>
+          <text x="40" y="21" text-anchor="middle" fill="#A7F3D0">Python</text>
+        </g>
+        <g transform="translate(602,452)">
+          <rect width="80" height="32" rx="16" fill="url(#pillGrad)" stroke="rgba(124,58,237,0.5)" filter="url(#softGlow)"><animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" begin="1.2s" repeatCount="indefinite"/></rect>
+          <text x="40" y="21" text-anchor="middle" fill="#E9D5FF">Docker</text>
+        </g>
+        <g transform="translate(692,452)">
+          <rect width="60" height="32" rx="16" fill="url(#pillGrad)" stroke="rgba(34,211,238,0.5)" filter="url(#softGlow)"><animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" begin="1.4s" repeatCount="indefinite"/></rect>
+          <text x="30" y="21" text-anchor="middle" fill="#A5F3FC">Git</text>
+        </g>
+        <g transform="translate(762,452)">
+          <rect width="90" height="32" rx="16" fill="url(#pillGrad)" stroke="rgba(16,185,129,0.5)" filter="url(#softGlow)"><animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" begin="1.6s" repeatCount="indefinite"/></rect>
+          <text x="45" y="21" text-anchor="middle" fill="#A7F3D0">Express</text>
+        </g>
+      </g>
+
+      <line x1="512" y1="506" x2="1108" y2="506" stroke="rgba(255,255,255,0.08)"/>
+
+      <!-- social icons -->
+      <g transform="translate(512,528)">
+        <!-- github -->
+        <g>
+          <circle cx="18" cy="18" r="18" fill="#111827" stroke="rgba(255,255,255,0.12)"/>
+          <circle cx="18" cy="18" r="18" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.5" filter="url(#softGlow)">
+            <animate attributeName="r" values="17;19;17" dur="3s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M18 8c-5.5 0-10 4.5-10 10 0 4.4 2.9 8.1 6.8 9.4.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.4.3.7 1 .7 1.9v2.9c0 .3.2.6.7.5A10 10 0 0 0 28 18c0-5.5-4.5-10-10-10z" fill="#E5E7EB" transform="scale(0.62) translate(11,11)"/>
+        </g>
+        <!-- linkedin -->
+        <g transform="translate(52,0)">
+          <circle cx="18" cy="18" r="18" fill="#111827" stroke="rgba(255,255,255,0.12)"/>
+          <circle cx="18" cy="18" r="18" fill="none" stroke="#22D3EE" stroke-width="1" opacity="0.5" filter="url(#softGlow)">
+            <animate attributeName="r" values="17;19;17" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+          </circle>
+          <text x="18" y="23" text-anchor="middle" font-size="14" font-weight="700" fill="#E5E7EB">in</text>
+        </g>
+        <!-- facebook -->
+        <g transform="translate(104,0)">
+          <circle cx="18" cy="18" r="18" fill="#111827" stroke="rgba(255,255,255,0.12)"/>
+          <circle cx="18" cy="18" r="18" fill="none" stroke="#10B981" stroke-width="1" opacity="0.5" filter="url(#softGlow)">
+            <animate attributeName="r" values="17;19;17" dur="3s" begin="1s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" begin="1s" repeatCount="indefinite"/>
+          </circle>
+          <path d="M21.2 12.2h-2c-.7 0-1 .3-1 1v1.9h3l-.4 3h-2.6v8.4h-3.1v-8.4h-2.2v-3h2.2v-2.3c0-2.2 1.3-3.6 3.4-3.6h2.7v3z" fill="#E5E7EB" transform="translate(0,-2) scale(1)"/>
+        </g>
+        <!-- instagram -->
+        <g transform="translate(156,0)">
+          <circle cx="18" cy="18" r="18" fill="#111827" stroke="rgba(255,255,255,0.12)"/>
+          <circle cx="18" cy="18" r="18" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.5" filter="url(#softGlow)">
+            <animate attributeName="r" values="17;19;17" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+          </circle>
+          <rect x="10.5" y="10.5" width="15" height="15" rx="5" fill="none" stroke="#E5E7EB" stroke-width="1.3"/>
+          <circle cx="18" cy="18" r="4" fill="none" stroke="#E5E7EB" stroke-width="1.3"/>
+          <circle cx="23" cy="13" r="1.1" fill="#E5E7EB"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+
+<style>
+  .pill:hover rect { transform: scale(1.06); }
+</style>
+</svg>
