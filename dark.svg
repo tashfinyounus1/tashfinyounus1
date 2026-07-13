@@ -130,31 +130,38 @@
       <g transform="translate(76,110)">
         <animateTransform attributeName="transform" type="translate" values="76,110;76,102;76,110" dur="5s" repeatCount="indefinite" additive="replace"/>
         <g font-size="10.4" fill="url(#asciiGrad)" filter="url(#softGlow)" xml:space="preserve">
-          <text y="0">        .:-=+*#%@%#*+=-:.        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.0s" repeatCount="indefinite"/></text>
-          <text y="15">      :+#%@@@@@@@@@@@@@%#+:      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.10s" repeatCount="indefinite"/></text>
-          <text y="30">    -#@@@@@@@@@@@@@@@@@@@@#-    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.20s" repeatCount="indefinite"/></text>
-          <text y="45">   +@@@@@@@#*=-----=*#@@@@@@+   <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.30s" repeatCount="indefinite"/></text>
-          <text y="60">  =@@@@@#-             -#@@@@=  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.40s" repeatCount="indefinite"/></text>
-          <text y="75"> *@@@@#    .-=+**+=-.    #@@@@* <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.50s" repeatCount="indefinite"/></text>
-          <text y="90"> @@@@#   =#@@@@@@@@#=   #@@@@  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.60s" repeatCount="indefinite"/></text>
-          <text y="105">*@@@@   +@@@@====@@@@+   @@@@* <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.70s" repeatCount="indefinite"/></text>
-          <text y="120">@@@@=  #@@@@      @@@@#  =@@@@ <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.80s" repeatCount="indefinite"/></text>
-          <text y="135">@@@@  =@@@@        @@@@=  @@@@ <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="0.90s" repeatCount="indefinite"/></text>
-          <text y="150">@@@@  #@@@@        @@@@#  @@@@ <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.00s" repeatCount="indefinite"/></text>
-          <text y="165">*@@@@  @@@@=      =@@@@  @@@@* <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.10s" repeatCount="indefinite"/></text>
-          <text y="180"> @@@@#  #@@@@====@@@@#  #@@@@  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.20s" repeatCount="indefinite"/></text>
-          <text y="195"> *@@@@   =#@@@@@@@@#=   @@@@*  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.30s" repeatCount="indefinite"/></text>
-          <text y="210">  =@@@@#     ....     #@@@@=   <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.40s" repeatCount="indefinite"/></text>
-          <text y="225">   +@@@@@@#*==+*#@@@@@@+       <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.50s" repeatCount="indefinite"/></text>
-          <text y="240">    -#@@@@@@@@@@@@@@@@#-       <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.60s" repeatCount="indefinite"/></text>
-          <text y="255">      :+#%@@@@@@@@%#+:         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.70s" repeatCount="indefinite"/></text>
-          <text y="270">        .:-=+*#%#*+=-:.        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="14s" begin="1.80s" repeatCount="indefinite"/></text>
+          <text y="0">..-... .-======--:--=---. ...:-.:-<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.0s" repeatCount="indefinite"/></text>
+          <text y="15"> .:...:-=*-:::----=-===----::-=--=<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.09s" repeatCount="indefinite"/></text>
+          <text y="30">###*++*#+*+====--=---==-..-:.::.::<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.18s" repeatCount="indefinite"/></text>
+          <text y="45">-+*-...:-=#**=+++-::-===:-::::. .:<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.27s" repeatCount="indefinite"/></text>
+          <text y="60">.-+:...::=-:------++--=-....:=-:--<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.36s" repeatCount="indefinite"/></text>
+          <text y="75">-==-:..--=--::::::-=+++=:.  .=*--=<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.45s" repeatCount="indefinite"/></text>
+          <text y="90">.:-....-+=:-:::::::::=+=:--:.:=:.:<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.54s" repeatCount="indefinite"/></text>
+          <text y="105">.:-....-=::::.:.:.:---=: .:---=:.:<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.63s" repeatCount="indefinite"/></text>
+          <text y="120">:--. :.--:::::::-::-=-+-... .:=-:-<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.72s" repeatCount="indefinite"/></text>
+          <text y="135">.-=:..-=------:::..:--+-... .:--::<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.81s" repeatCount="indefinite"/></text>
+          <text y="150">.=*.. :-:--==--::..:--+= ...:--.::<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.9s" repeatCount="indefinite"/></text>
+          <text y="165">.:=.  .-::::-:::=#%@@@@%+...:-:.::<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="0.99s" repeatCount="indefinite"/></text>
+          <text y="180">.:-... :-::-::.*@#*##*==*#.. -*=:.<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.08s" repeatCount="indefinite"/></text>
+          <text y="195">.--. ..:--.....%*.-+=--=-#: .-*+==<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.17s" repeatCount="indefinite"/></text>
+          <text y="210">.::.  .----::-:=+-+**=*#+=..--==-=<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.26s" repeatCount="indefinite"/></text>
+          <text y="225">.-=.  .---::---+=--=+=+=-+-..----=<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.35s" repeatCount="indefinite"/></text>
+          <text y="240">.:+.  .---:::-:.-#+++**+#= .:::::+<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.44s" repeatCount="indefinite"/></text>
+          <text y="255">..=.  .----::---.*@+=****.. .....:<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.53s" repeatCount="indefinite"/></text>
+          <text y="270"> .:.. .::::::...=:=+#%*-  .. ....:<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.62s" repeatCount="indefinite"/></text>
+          <text y="285">.::. . .....:==#%#*==+=#.    :=-..<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.71s" repeatCount="indefinite"/></text>
+          <text y="300">----:.==+*#%@@@@@@@%#*%@#*+=::-=.:<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.8s" repeatCount="indefinite"/></text>
+          <text y="315">----:=%@@@@@@@@@@@%@@@%%@%@@@@%+::<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.89s" repeatCount="indefinite"/></text>
+          <text y="330">===-=#%@@@@@@@@@@@@@@%%@@@@@@@@@-:<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="1.98s" repeatCount="indefinite"/></text>
+          <text y="345">++++*#@@@@@@@@@@@@@@@%@%%@@@@@@@=-<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="2.07s" repeatCount="indefinite"/></text>
+          <text y="360">++=+##%@@@@@@@@@@@@@@%%%@@@@@@@@+-<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="2.16s" repeatCount="indefinite"/></text>
+          <text y="375">===+%#%@@@@@%%@@@@@@@%%%@@@@@@@@*-<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="16s" begin="2.25s" repeatCount="indefinite"/></text>
         </g>
         <!-- terminal cursor block under ascii -->
-        <rect x="0" y="288" width="9" height="14" fill="#22D3EE" filter="url(#softGlow)">
+        <rect x="0" y="408" width="9" height="14" fill="#22D3EE" filter="url(#softGlow)">
           <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
         </rect>
-        <text x="16" y="299" font-size="11" fill="#94A3B8">rendering_identity...</text>
+        <text x="16" y="419" font-size="11" fill="#94A3B8">rendering_identity...</text>
       </g>
 
       <!-- scanline sweep -->
