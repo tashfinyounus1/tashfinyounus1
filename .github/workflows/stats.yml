@@ -19,7 +19,7 @@ jobs:
           card: stats
           options: username=tashfinyounus1&show_icons=true&hide_rank=true&bg_color=0A101F&title_color=22D3EE&icon_color=10B981&text_color=E7ECF7&border_color=0891B2
           path: assets/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_PAT }}
 
       - name: Generate top languages card
         uses: readme-tools/github-readme-stats-action@v1
