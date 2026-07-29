@@ -1,17 +1,4 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tashfinyounus1/tashfinyounus1/main/dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tashfinyounus1/tashfinyounus1/main/light.svg" />
-    <img alt="tashfinyounus1's profile banner" src="https://raw.githubusercontent.com/tashfinyounus1/tashfinyounus1/main/light.svg" />
-  </picture>
-</p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tashfinyounus1/tashfinyounus1/main/assets/dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tashfinyounus1/tashfinyounus1/main/assets/light.svg" />
-    <img alt="tashfinyounus1's profile banner" src="https://raw.githubusercontent.com/tashfinyounus1/tashfinyounus1/main/assets/light.svg" />
-  </picture>
-</p>
+
 
 <!-- Streak -->
 <p align="center">
