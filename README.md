@@ -1,11 +1,12 @@
-<!-- Animated Profile Banner -->
-<p align="center">
-  <img
-    width="100%"
-    src="https://raw.githubusercontent.com/tashfinyounus1/tashfinyounus1/main/assets/banner.svg"
-    alt="Animated GitHub Profile Banner"
-  />
-</p>
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="profile-light.svg">
+  <img alt="Md. Tashfin Younus — profile.sh --live" src="profile-dark.svg" width="100%">
+</picture>
+
+</div>
 
 <!-- Streak -->
 <p align="center">
