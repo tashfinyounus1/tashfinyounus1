@@ -1,4 +1,11 @@
-
+<!-- Animated Profile Banner -->
+<p align="center">
+  <img
+    width="100%"
+    src="https://raw.githubusercontent.com/tashfinyounus1/tashfinyounus1/main/assets/banner.svg"
+    alt="Animated GitHub Profile Banner"
+  />
+</p>
 
 <!-- Streak -->
 <p align="center">
